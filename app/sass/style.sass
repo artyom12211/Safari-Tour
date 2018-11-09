@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700')
+@import url('https://fonts.googleapis.com/css?family=Charmonman:400,700')
+
+
+$main-font: 'Raleway'
+$second-font: 'Charmonman', cursive
+$light-purple: #93003B
+
+body
+	overflow-x: hidden
+	font-family: $main-font
+	-webkit-font-smoothing: antialiased
+	-webkit-overflow-scrolling: touch
+
+
+
+.wrapper
+	background-color: #D9E8F0
+
+.header 
+	background: #41ade5
+	color: #fff
+	position: relative
+	height: 10vh
+	z-index: 1
+ 
+ 
+.header:after 
+	background: inherit
+	bottom: 0
+	content: ''
+	display: block
+	height: 50%
+	left: 0
+	position: absolute
+	right: 0
+	transform: skewY(-1.5deg)
+	transform-origin: 100%
+	z-index: -1
+    
+.header 
+	display: flex
+	justify-content: space-between!important
+
+
+.logo 
+	margin-bottom: 50px
+	& img
+		min-width: 100px
+
+.menu 
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	
+
+.menu li 
+	margin-left: 20px!important
+
+.menu a
+	font-size: 17px
+	font-weight: 400
+	line-height: 52px
+	color: #fff!important
+	text-decoration: none
+
+
+
+/*header end, begin section-under-header!*/
+
+.section-under-header
+	margin-top: 60px
+
+
+form
+	background-color: #299fca
+	 
+.form-child
+	margin-top: 10px
+
+.onbook
+	margin-right: px
+
+input, textarea, select, form
+	border: none
+	border-radius: 10px
+	outline: none
+	-moz-appearance: none
+
+select
+	width: 185px
+	margin: 0 auto
+
+textarea
+	width: 185px
+	overflow: hidden
+
+.t-a
+	width: 65%
+	margin: 0 auto
+
+select
+	color:#37A5CE
+	
+
+
+.bt
+	margin-left: 135px
+	background-color: #EDE20C
+	padding: 11px 35px
+	border-radius: 8px
+	border: none
+	color: #64AFFC
+	font-weight: 700
+	cursor: pointer
+
+.two-clouds
+	height: 794px
+	background-color: #127EA5
+	background: url(/image/two-cloud.png) no-repeat center top / cover
+
+.wrap-two-left-b
+	position: relative
+	top: 320px
+
+.list 
+	margin-top: 50px
+	position: 
+	top: 320px
+
+.title-specc-off 
+	color: #fff
+	font-family: $second-font
+	font-weight: 500
+
+.text_1
+	color: #fff
+
+.bt-2
+	background-color: #EDE20C
+	padding: 11px 35px
+	border-radius: 8px
+	border: none
+	color: #64AFFC
+	font-weight: 700
+	cursor: pointer
+	padding: 4px 20px 4px 20px
+
+.buy 
+	margin: 0 auto
+	& h3
+		color: #fff
+
+.s1914
+	font-weight: 900
+
+.child-but
+	padding: 5px 30px 5px 30px
+	border-radius: 10px 10px 0px 0px
+	border: none
+	cursor: pointer
+	&-one
+		background-color: #81FFFF
+		color: #299FCA
+	&-two
+		margin-left: 5px
+		background-color:#299FCA
+		color: #81FFFF
+
+.imgs
+	min-width: 80px
+	margin-left: 100px
+
+.one-list-block
+	line-height: 19px
+	& span 
+		color: #fff
+		font-size: 14px
+
+.fa-caret-right
+	font-size: 14px
+	background-color: #81FFFF
+	width: 14px
+	height: 14px
+	border-radius: 50%
+	color: #127EA5
+
+.two-list-block
+	position: relative
+	bottom: 9px
+	line-height: 38px
+	color: white
+
+.three-list-block
+	@extend .two-list-block
+	margin-left: 25px
+
+.section_main-map
+	background-color: #D6E6EF 
+
+.main-map
+	background: url(../image/map.png) no-repeat center top / cover
+	height: 754px
+	&_title
+		padding-top: 20px
+	
+
+
+
+
+
+
+/* @media all and (max-width: 1295px) */ 
+
+
+@media all and (max-width: 1199px)
+	
+	.two-clouds
+		height: 1200px
+	
+	.but
+		display: flex
+		
+
+	.main-list-block
+		display: flex
+		justify-content: space-between
+
+
+	.menu li 
+		margin-left: 0px!important
+		margin-right: 10px
+
+@media all and (max-width: 992px)
+	
+	.two-clouds
+		height: 1340px
+
+	.menu li
+		margin-left: 5px
+
+	input, select, textarea 
+		width: 135px
+
+	.bt
+		width: 135px
+		margin-right: 62px
+		
+	.menu a 
+		line-height: 20px
+	
+
+@media all and (max-width: 768px) 
+	
+	.navbar-container
+		position: sticky
+        top: 0
+        overflow-y: auto
+        height: 100vh
+    	 
+	.navbar-container .navbar 
+		align-items: flex-start
+		justify-content: flex-start
+		flex-wrap: nowrap
+		flex-direction: column
+		height: 100%
+    
+	.navbar-container .navbar-collapse 
+		align-items: flex-start
+
+	.navbar-container .nav 
+		flex-direction: column
+		flex-wrap: nowrap
+            
+
+	.navbar-container .navbar-nav 
+		flex-direction: column !important
+
+	.form-block
+		margin-top: 20px
+
+	.bt
+		width: 135px
+		margin-right: 62px
+
+	.child-but
+		padding: 5px 15px 5px 15px
+
+	.two-list-block
+		min-width: 60px
+
+	.three-list-block
+		display: none
+
+	
+
+@media all and (max-width: 576px)
+	
+	.buy
+		margin-right: 140px
+		flex-direction: column
+		align-items: center
+
+	.two-clouds
+		height: 1700px
+	
+	.one-list-block span
+		text-align: center!important
+	
+	.two-list-block
+		display: none
+
+	.imgs img
+		display: none
+
+	.bt
+		transform: scale(0.55)
+		margin: 0 auto
+		margin-left: 12px
+
+	.bt-2
+		min-width: 70px
+
+	.list
+		margin-top: 40px
+
+	textarea
+		min-width: 135px
+	
+	select
+		width: 125px
+
+
