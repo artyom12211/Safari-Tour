@@ -9,10 +9,26 @@ $light-purple: #93003B
 body
 	overflow-x: hidden
 	font-family: $main-font
-	-webkit-font-smoothing: antialiased
-	-webkit-overflow-scrolling: touch
 
-
+.btn-top
+	display: none
+	position: fixed
+	bottom: 20px
+	right: 40px
+	border: none
+	outline: none
+	border-radius: 10px
+	z-index: 99
+	padding: 15px 40px
+	cursor: pointer
+	color: #fff
+	background-color: #EF4BEC
+	opacity: .75
+	&:focus
+		border: none
+		outline: none
+	&:hover
+		background-color: #7E027B
 
 .wrapper
 	background-color: #D9E8F0
@@ -20,9 +36,9 @@ body
 .header 
 	background: #41ade5
 	color: #fff
-	position: relative
+	
 	height: 10vh
-	z-index: 1
+	
  
  
 .header:after 
@@ -73,7 +89,7 @@ body
 	margin-top: 60px
 
 
-form
+.form-one
 	background-color: #299fca
 	 
 .form-child
@@ -118,7 +134,7 @@ select
 .two-clouds
 	height: 794px
 	background-color: #127EA5
-	background: url(/image/two-cloud.png) no-repeat center top / cover
+	background: url(../image/two-cloud.png) no-repeat center top / cover 
 
 .wrap-two-left-b
 	position: relative
@@ -204,11 +220,56 @@ select
 	height: 754px
 	&_title
 		padding-top: 20px
-	
+
+.find-tour
+	color: #4690b4
+	font-weight: 900
+
+.click-on-map
+	color: #6ab5d0
+	font-weight: 900
 
 
 
+footer
+	color: white
+	background-color: #127FA6
 
+.footer-img-th-bl
+	width: 39px
+	height: 39px
+	border-radius: 50%
+	background-color: #2EB3CC
+	&:hover
+		background-color: black
+
+
+.footer-ico
+		text-align: center
+		& img
+			margin-top: 6px
+			
+.footer-button-th-bl
+	cursor: pointer
+	margin-left: 10px
+	border-radius: 10px
+	background-color: #D6E6EF
+	padding: 6px 12px
+	color: #4B9DBC
+	border: none
+	outline: none
+	&:focus
+		outline: none
+
+
+#inp-footer-th-bl
+	box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75)
+	border: 1px solid #96D5EC
+	background-color: #0f6686
+
+
+#h3-footer-th-bl
+	font-weight: 800	
 
 
 /* @media all and (max-width: 1295px) */ 

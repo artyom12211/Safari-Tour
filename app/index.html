@@ -8,7 +8,7 @@
 	<title>Safari Tour</title>
 </head>
 <body>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, quo.</p>
+	<button class="btn-top" title="go to on">Наверх</button>
 	<div class="wrapper">
 		<header>
 			<div class="container">
@@ -18,32 +18,33 @@
 						<img class="saf-tour img-fluid" src="image/logo.png">
 					</div>
 
-					<div class="menu  d-flex justify-content-end">
+					<div class="menu   justify-content-end">
 						<nav class="navbar  navbar-expand-md navbar-light">
 						          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						            <span class="navbar-toggler-icon"></span>
+						            <span class="mob navbar-toggler-icon">
+						            </span>
 						          </button>
-						          <div class="collapse navbar-collapse" id="navbar">
+						          <div class="mobile-tab collapse  navbar-collapse" id="navbar">
 						            <!-- Пункты вертикального меню -->
-						            <ul class=" navbar-nav d-flex justify-content-start align-items-center">
+						            <ul class=" navbar-nav">
 						              <li class="nav-item">
-						              <a class="nav-link" href="#link-1">Home</a>
+						              <a class="nav-link" href="#">Home</a>
 						              </li>
 						              <li class="nav-item">
-						              <a class="nav-link" href="#link-2">Package</a>
+						              <a class="nav-link" href="#">Package</a>
 						              </li>
 						              <li class="nav-item">
-						              <a class="nav-link " href="#link-3">Flights</a>
+						              <a class="nav-link " href="#">Flights</a>
 						              </li>
 						              <li class="nav-item">
-						              <a class="nav-link" href="#link-4">Trains</a>
+						              <a class="nav-link" href="#">Trains</a>
 						              </li>
 						              <li class="nav-item">
-						              <a class="nav-link" href="#link-5">Reach us</a>
+						              <a class="nav-link" href="#">Reach us</a>
 						              </li>
 						            </ul>
 						          </div>
-						        </nav>
+						</nav>
 					</div>
 
 				</div>
@@ -62,7 +63,7 @@
 					</div>
 					<div class="form-block col-md">
 						<div class="form-group">
-						<form class="d-flex flex-column ">
+						<form class="form-one d-flex flex-column ">
 						  <fieldset class="form-group ">
 
 						  	<div class="onbook form-group form-child">
@@ -109,6 +110,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
 			<div class="two-clouds">
 				<div class="container">
 					<div class="main-clouds row">
@@ -280,10 +282,10 @@
 		<section class = "section_main-map">
 			<div class = "container">
 				<div class ="main-map_title">
-						<h3 class = "text-center">
+						<h3 class = "find-tour text-center">
 						    Find Tourist Spots by Map
 						</h3>
-						<h5 class ="text-center">
+						<h5 class ="click-on-map text-center">
 							Click on map
 						</h5>
 				</div>
@@ -295,8 +297,54 @@
 			</div>
 		</section>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<footer>
+			<div class="container">
+				<div class="footer-main row">
+					<div class="footer-block col-3 mt-3">
+						<form action="">
+							<h3 id="h3-footer-th-bl">News letter</h3>
+							<div class="e-mail-accept-th-bl d-flex mb-4
+							">
+								<input id="inp-footer-th-bl" placeholder="   enter email address" type="text">
+								<button class="footer-button-th-bl">Subscribe</button>
+							</div>
+							<div class="soc-media-th-bl">
+								<h3 id="h3-footer-th-bl">Social media</h3>
+								<div class="footer-ico  d-flex">
+									<div class="
+									footer-img-th-bl">
+										<a href="#"><img class="img-fluid"  src="image/footer-ico-th-bl.png" alt="footer-ico">
+										</a>
+									</div>
+
+									<div class="ml-2 footer-img-th-bl">
+										<a href="#"><img class="img-fluid" src="image/footer-ico-two-bl.png" alt="footer-ico">
+										</a>
+									</div>
+
+									<div class="ml-2 footer-img-th-bl">
+										<a href="#"><img class="img-fluid" src="image/footer-ico-thr-bl.png" alt="footer-ico">
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="footer-block col-3"></div>
+					<div class="footer-block col-3"></div>
+				</div>
+			</div>
+			
+		</footer>
+
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+	<script src="js/js.js"></script>
 </body>
 </html>

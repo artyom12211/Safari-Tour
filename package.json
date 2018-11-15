@@ -9,6 +9,7 @@
   "author": "mnga",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.3.1",
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
