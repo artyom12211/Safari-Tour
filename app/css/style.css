@@ -30,10 +30,11 @@ body {
 .header {
   background: #41ade5;
   color: #fff;
+  position: relative;
+  z-index: 1;
   height: 10vh; }
 
 .header:after {
-  background: inherit;
   bottom: 0;
   content: '';
   display: block;
@@ -93,7 +94,7 @@ select {
   width: 185px;
   margin: 0 auto; }
 
-textarea {
+#textarea-header {
   width: 185px;
   overflow: hidden; }
 
@@ -211,11 +212,12 @@ select {
   font-weight: 900; }
 
 footer {
+  padding-bottom: 1px;
   color: white;
   background-color: #127FA6; }
 
 .footer-img-th-bl {
-  width: 39px;
+  min-width: 39px;
   height: 39px;
   border-radius: 50%;
   background-color: #2EB3CC; }
@@ -223,29 +225,77 @@ footer {
     background-color: black; }
 
 .footer-ico {
+  width: 150px;
+  height: auto;
   text-align: center; }
   .footer-ico img {
     margin-top: 6px; }
 
-.footer-button-th-bl {
+.footer-button-th-bl, .footer-button-thr-bl {
   cursor: pointer;
-  margin-left: 10px;
   border-radius: 10px;
   background-color: #D6E6EF;
   padding: 6px 12px;
   color: #4B9DBC;
   border: none;
   outline: none; }
-  .footer-button-th-bl:focus {
+  .footer-button-th-bl:focus, .footer-button-thr-bl:focus {
     outline: none; }
 
-#inp-footer-th-bl {
+.footer-middle-h3 {
+  font-weight: 600; }
+
+.footer-middle-p {
+  font-weight: 400; }
+
+.footer-button-thr-bl {
+  max-width: 91px;
+  margin: 0 auto; }
+
+#inp-footer-th-bl, .inp-foor-last {
+  box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
+  border: 1px solid #96D5EC;
+  background-color: #0f6686; }
+
+.inp-foot-last {
   box-shadow: inset 1px 3px 8px rgba(13, 66, 85, 0.75);
   border: 1px solid #96D5EC;
   background-color: #0f6686; }
 
 #h3-footer-th-bl {
   font-weight: 800; }
+
+.inp-foot-last {
+  display: block; }
+
+.inp-foot-last:-moz-placeholder {
+  color: #999999; }
+
+.inp-foot-last::-moz-placeholder {
+  color: #999999; }
+
+.inp-foot-last:-ms-input-placeholder {
+  color: #999999; }
+
+.inp-foot-last::-webkit-input-placeholder {
+  color: #999999; }
+
+textarea::-webkit-input-placeholder {
+  color: #999999; }
+
+.e-mail-accept-thr-bl input {
+  margin-top: 10px; }
+
+.e-mail-accept-thr-bl textarea {
+  overflow: hidden;
+  width: 284px;
+  height: 57px;
+  margin-top: 10px !important; }
+
+.hidden-block {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: none; }
 
 /* @media all and (max-width: 1295px) */
 @media all and (max-width: 1199px) {
@@ -258,20 +308,33 @@ footer {
     justify-content: space-between; }
   .menu li {
     margin-left: 0px !important;
-    margin-right: 10px; } }
+    margin-right: 10px; }
+  .footer-main {
+    display: flex;
+    justify-content: space-between !important; }
+  .e-mail-accept-thr-bl textarea {
+    max-width: 114px; }
+  .footer-button-th-bl, .footer-button-thr-bl {
+    margin-top: 10px; }
+  #inp-footer-th-bl, .inp-foor-last {
+    width: 150px !important; }
+  .inp-foot-last textarea {
+    width: 120px !important; } }
 
 @media all and (max-width: 992px) {
   .two-clouds {
     height: 1340px; }
   .menu li {
     margin-left: 5px; }
-  input, select, textarea {
-    width: 135px; }
+  .form-child input, select, textarea {
+    width: 135px !important; }
   .bt {
     width: 135px;
     margin-right: 62px; }
   .menu a {
-    line-height: 20px; } }
+    line-height: 20px; }
+  .footer-button-thr-bl {
+    float: left; } }
 
 @media all and (max-width: 768px) {
   .navbar-container {
@@ -302,7 +365,9 @@ footer {
   .two-list-block, .three-list-block {
     min-width: 60px; }
   .three-list-block {
-    display: none; } }
+    display: none; }
+  .e-mail-accept-thr-bl textarea {
+    width: 92px; } }
 
 @media all and (max-width: 576px) {
   .buy {
@@ -310,7 +375,7 @@ footer {
     flex-direction: column;
     align-items: center; }
   .two-clouds {
-    height: 1700px; }
+    height: 1790px; }
   .one-list-block span {
     text-align: center !important; }
   .two-list-block, .three-list-block {
@@ -325,7 +390,23 @@ footer {
     min-width: 70px; }
   .list {
     margin-top: 40px; }
-  textarea {
+  footer h3 {
+    font-size: 17px; }
+  footer p {
+    font-size: 12px; }
+  .form-child textarea {
     min-width: 135px; }
-  select {
-    width: 125px; } }
+  .form-child select {
+    width: 125px; }
+  .e-mail-accept-thr-bl textarea {
+    width: 81px; }
+  #inp-footer-th-bl, .inp-foor-last {
+    width: 103px !important; }
+  .footer-main {
+    justify-content: space-around !important; }
+  .footer-ico {
+    flex-direction: column; }
+  .footer-img-th-bl {
+    margin-top: 7px;
+    margin-left: 0px !important;
+    width: 39px; } }
